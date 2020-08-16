@@ -1,3 +1,5 @@
+*J'ai volontairement converti les exemples en python*
+
 # Noms
 
 ## Choisir des noms révélateurs des intentions
@@ -63,7 +65,7 @@ def get_flagged_cells() -> List[int]:
   return flagged_cells
 ```
 Avec une classe pour les cellules on peut cacher les constantes magiques et ajouter une fonction révélatrice des intentions.
-s
+
 
 ## Éviter la désinformation
 Pour faire réf à un groupe de compte nommer la variable `account_list` uniquement si il s'agit bien d'une liste.
@@ -230,16 +232,16 @@ class GuessStatisticsMessage:
   plural_modifier: str
 
   def make(self, candidate: str, count: int):
-    create_plural_dependent_message_parts(count)
+    self.create_plural_dependent_message_parts(count)
     return f'There {self.verb} {self.number} {candidate} {self.plural_modifier}'
 
   def create_plural_dependent_message_parts(self, count):
     if count == 0:
-      there_are_no_letters()
+      self.there_are_no_letters()
     elif count == 1:
-      there_is_one_letter()
+      self.there_is_one_letter()
     else:
-      there_are_many_letters(count)
+      self.there_are_many_letters(count)
 
   def there_are_many_letters(self, count):
     self.number = str(count)
