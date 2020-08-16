@@ -1,5 +1,7 @@
 *J'ai volontairement converti les exemples en python*
 
+WIP
+
 # Noms
 
 ## Choisir des noms révélateurs des intentions
