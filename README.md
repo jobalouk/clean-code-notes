@@ -332,5 +332,7 @@ Pour rechercher le parent...**
 
 
 ## Instruction switch (java)
+[Link](examples_p42-p43.md)
+
 
 ## Arguments d’une fonction
