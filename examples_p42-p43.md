@@ -21,7 +21,7 @@ def calculate_pay(e: Employee) -> Optional[Money]:
 - Elle prend en charge plusieurs choses
 - Elle ne respecte pas le principe de responsabilité unique (SRP, Single Responsibility Principle)\
 car il existe plusieurs raisons de la modifier
-- Elle ne respecte pas le principe ouvert/fermé (OCP, Open closed format) ???
+- Elle ne respecte pas le principe ouvert/fermé (OCP, Open closed format) car elle doit être modifié dès l'ajout de nouveaux types
 
 Mais son principal problème est sans doute qu’un nombre illimité d’autres fonctions auront la même structure :
 
@@ -81,5 +81,3 @@ class CommissionedEmployee(Pay):
   def delivery_pay(self):
     # Instructions...
 ```
-
-La même chose pour les autres classes
